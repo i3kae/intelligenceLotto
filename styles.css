@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#results {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.result-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-item h2 {
+  margin-top: 0;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #007bff; /* 기본 색상 */
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  animation: pop-in 0.5s ease;
+}
+
+.number.yellow {
+  background-color: #fbc400; /* 노란색 */
+}
+
+.number.blue {
+  background-color: #69c8f2; /* 파란색 */
+}
+
+.number.red {
+  background-color: #ff7272; /* 빨간색 */
+}
+
+.number.gray {
+  background-color: #aaaaaa; /* 회색 */
+}
+
+.number.green {
+  background-color: #7fcd1e; /* 초록색 */
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
