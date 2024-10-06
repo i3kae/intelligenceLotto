@@ -133,11 +133,11 @@ function displayResult(numbers, method) {
 
   const title = document.createElement("h2");
   if (method === "mostFrequent") {
-    title.textContent = "가장 많이 나온 번호로 생성된 로또 번호:";
+    title.textContent = "가장 많이 나온 번호로 생성된 로또 번호";
   } else if (method === "leastFrequent") {
-    title.textContent = "가장 적게 나온 번호로 생성된 로또 번호:";
+    title.textContent = "가장 적게 나온 번호로 생성된 로또 번호";
   } else if (method === "predicted") {
-    title.textContent = "예측 번호로 생성된 로또 번호:";
+    title.textContent = "예측 번호로 생성된 로또 번호";
   }
 
   const numbersDiv = document.createElement("div");
