@@ -148,7 +148,6 @@ function displayResult(numbers, method) {
     numberSpan.className = "number";
     numberSpan.textContent = num;
 
-    // 번호에 따라 색상 클래스 추가
     if (num >= 1 && num <= 10) {
       numberSpan.classList.add("yellow");
     } else if (num >= 11 && num <= 20) {
