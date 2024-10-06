@@ -35,8 +35,8 @@ h1 {
   overflow: hidden;
 }
 
-.result-item h2 {
-  margin-top: 0;
+.result-item h4 {
+  margin: 0;
 }
 
 .numbers {

@@ -131,13 +131,13 @@ function displayResult(numbers, method) {
   const resultItem = document.createElement("div");
   resultItem.className = "result-item";
 
-  const title = document.createElement("h2");
+  const title = document.createElement("h4");
   if (method === "mostFrequent") {
     title.textContent = "가장 많이 나온 번호로 생성된 로또 번호";
   } else if (method === "leastFrequent") {
     title.textContent = "가장 적게 나온 번호로 생성된 로또 번호";
   } else if (method === "predicted") {
-    title.textContent = "예측 번호로 생성된 로또 번호";
+    title.textContent = "랜덤 번호로 생성된 로또 번호";
   }
 
   const numbersDiv = document.createElement("div");
